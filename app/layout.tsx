@@ -32,7 +32,9 @@ export default function RootLayout({
           <nav className="flex justify-center gap-4 p-4">
             <Link href={"/"}>Home</Link>
             <Link href={"/about"}>About</Link>
+            <Link href={"/product"}>Product</Link>
             <Link href={"/admin"}>Admin</Link>
+            <Link href={"/user"}>User</Link>
           </nav>
         </header>
         {children}
