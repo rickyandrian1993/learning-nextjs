@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "slug": "understanding-json",
+      "title": "Understanding JSON",
+      "content": "JSON stands for JavaScript Object Notation. It is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate.",
+      "author": "John Doe",
+      "date": "2023-10-01"
+    },
+    {
+      "id": 2,
+      "slug": "getting-started-with-python",
+      "title": "Getting Started with Python",
+      "content": "Python is a versatile programming language that is great for beginners and experienced developers alike. It has a simple syntax and a large community.",
+      "author": "Jane Smith",
+      "date": "2023-10-02"
+    }
+  ],
+  "settings": {
+    "sitename": "My Blog"
+  }
+}

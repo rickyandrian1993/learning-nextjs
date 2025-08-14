@@ -1,15 +1,16 @@
+import { Footer } from "@/app/components/Footer";
+import { Header } from "@/app/components/Header";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
+import { JetBrains_Mono, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fontSans = Source_Sans_3({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fontMono = JetBrains_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
@@ -25,19 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <header className="border-b border-white">
-          <nav className="flex justify-center gap-4 p-4">
-            <Link href={"/"}>Home</Link>
-            <Link href={"/about"}>About</Link>
-            <Link href={"/product"}>Product</Link>
-            <Link href={"/admin"}>Admin</Link>
-            <Link href={"/user"}>User</Link>
-          </nav>
-        </header>
+      <body className={`${fontSans.variable} ${fontMono.variable} antialiased`}>
+        <Header />
+
         {children}
+
+        <Footer />
       </body>
     </html>
   );
